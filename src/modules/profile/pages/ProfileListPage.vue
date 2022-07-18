@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import { FETCH_ALL_USER, GET_USER } from "@/";
-import TheErrorComponent from "@/shared/components/TheErrorComponent.vue";
+import { FETCH_ALL_USER, GET_USER } from "../store";
+import TheErrorComponent from "@/components/TheErrorComponent.vue";
 
 export default {
   name: "ProfileListPage",

@@ -1,4 +1,4 @@
-import HttpException from "@/app/shared/utils/exceptions/HttpExceptions";
+import HttpException from "@/utilities/exceptions/HttpExceptions";
 import axios from "axios";
 
 export default class Http {

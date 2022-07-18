@@ -1,4 +1,4 @@
-import Http from "@/app/shared/services/http/Http";
+import Http from "@/services/http/Http";
 
 export class UserService {
   static async getUser(id) {
@@ -6,6 +6,6 @@ export class UserService {
   }
 
   static async getAllUsers() {
-    return await Http.get("https://jsonplaceholder.typicode.com/users");
+    return await Http.get("https://jsonplaceholder.typicode.com/usersAA");
   }
 }

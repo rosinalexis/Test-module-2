@@ -1,4 +1,4 @@
-import { ProfileRoutes } from "@/app/profile/routes";
+import { ProfileRoutes } from "@/modules/profile/routes";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [...ProfileRoutes];

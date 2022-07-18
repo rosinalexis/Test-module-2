@@ -1,4 +1,4 @@
-import ProfileListPageVue from "@/modules/profile/pages/ProfileListPage.vue";
+import ProfileListPageVue from "./pages/ProfileListPage.vue";
 import ProfileAboutPage from "./pages/ProfileAboutPage.vue";
 import ProfilePage from "./pages/ProfilePage.vue";
 import ProfileModule from "./ProfileModule.vue";

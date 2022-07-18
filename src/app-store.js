@@ -1,5 +1,5 @@
 import { createStore } from "vuex";
-import { ProfileStore } from "@/app/profile/store";
+import { ProfileStore } from "@/modules/profile/store";
 
 export default createStore({
   state: {},
