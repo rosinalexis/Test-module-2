@@ -1,13 +1,19 @@
-import ProfileListPageVue from "./pages/ProfileListPage.vue";
+import ProfileListPage from "./pages/ProfileListPage.vue";
 import ProfileAboutPage from "./pages/ProfileAboutPage.vue";
 import ProfilePage from "./pages/ProfilePage.vue";
 import ProfileModule from "./ProfileModule.vue";
+import ProfileAddPage from "./pages/ProfileAddPage.vue";
 
 export const ProfileRoutes = [
   {
     path: "/",
     name: "profile.list",
-    component: ProfileListPageVue,
+    component: ProfileListPage,
+  },
+  {
+    path: "/users/add",
+    name: "profile.add",
+    component: ProfileAddPage,
   },
   {
     path: "/users/:id",

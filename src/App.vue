@@ -1,4 +1,11 @@
 <template>
+  <h1>SITE DE GESTION DES UTILISATEURS</h1>
+  <router-link :to="{ name: 'profile.list' }">
+    Lister les utilisateurs |
+  </router-link>
+  <router-link :to="{ name: 'profile.add' }">
+    Ajouter un utilisateur |
+  </router-link>
   <router-view />
 </template>
 

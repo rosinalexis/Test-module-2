@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-error-component :error="error"></the-error-component>
-    <h1>Liste des utilisateurs</h1>
+    <h2>Liste des utilisateurs</h2>
     <ul v-for="user in users" :key="user.id">
       <li>
         <router-link :to="{ name: 'profile', params: { id: user.id } }">{{
