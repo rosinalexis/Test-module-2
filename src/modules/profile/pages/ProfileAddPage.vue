@@ -3,21 +3,37 @@
     <h2>Ajouter un utilisateur</h2>
     <br />
     <form>
-      <label for="name"> Name </label>
-      <input type="text" name="name" />
+      <BaseInput
+        v-model:modelValue="user.name"
+        label="Name"
+        type="text"
+      ></BaseInput>
 
-      <label for="username"> Username </label>
-      <input type="text" name="username" />
+      <BaseInput
+        v-model="user.username"
+        label="Username"
+        type="text"
+      ></BaseInput>
 
-      <label for="email"> Email </label>
-      <input type="email" name="email" />
+      <BaseInput v-model="user.email" label="Email" type="email"></BaseInput>
 
       <button type="submit">Envoyer</button>
     </form>
   </div>
 </template>
 <script>
+import BaseInput from "@/components/BaseInput.vue";
 export default {
   name: "ProfileAddPage",
+  components: { BaseInput },
+  data() {
+    return {
+      user: {
+        name: "",
+        username: "",
+        email: "",
+      },
+    };
+  },
 };
 </script>
